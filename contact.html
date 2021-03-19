@@ -7,17 +7,28 @@
     <title>Contact Form</title>
   </head>
   <body>
-    <form action="https://formsubmit.co/mrcarlevans9@gmail.com" method="POST">
+    <form action="https://formsubmit.co/youremail@email.com" method="POST">
+      <!--this is the action that occurs on submit of the form please note you will need to activate your email address you have entered in order to recieve emails-->
       <input
         type="hidden"
         name="_next"
         value="https://yourdomain.co/thanks.html"
       />
+      <!--this is your redirect to your thank you page-->
       <input type="hidden" name="_subject" value="New Email!" />
+      <!--subject line for emmial value = the subject you would like to set-->
       <input type="email" name="email" placeholder="Email Address" required />
-      <input type="text" name="name" required />
-      <input type="email" name="email" required />
+      <!--user inputs email into this-->
+      <input
+        type="text"
+        name="name"
+        placeholder="write your message here"
+        required
+      />
+      <!--this is where the email message is entered by user-->
+
       <button type="submit">Send</button>
+      <!--this is the submit button-->
     </form>
   </body>
 </html>
